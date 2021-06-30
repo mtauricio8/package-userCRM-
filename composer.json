@@ -1,0 +1,33 @@
+{
+    "name": "esatic/activateuser",
+    "description": "Registrar un usuario activado desde el CRM en la base de datos y enviar un correo de confirmacion",
+    "authors": [
+        {
+            "name": "mauricio tapia",
+            "email": "mtauricio66@gmail.com"
+        }
+    ],
+
+    "version": "1.0.0",
+
+    "require": {
+        "php": "^7.4",
+        "laravel/framework": "^7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Esatic\\activateuser\\": "src/"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Esatic\\activateuser\\ActiveUserServiceProvider"
+            ]
+        }
+    }
+
+
+}
