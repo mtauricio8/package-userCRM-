@@ -15,8 +15,9 @@ class AddDataCrmToUsersTable extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->integer('id_crm')->after('password');
+            $table->string('type_user')->after('id_crm')->default('Contacts');;
             $table->string('last_name')->after('name')->nullable();
-            $table->boolean('active')->after('id_crm');
+            $table->boolean('active')->after('type_user');
         });
     }
 

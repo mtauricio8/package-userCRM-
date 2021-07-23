@@ -8,6 +8,7 @@ class User extends \App\Models\User
         'name',
         'last_name',
         'id_crm',
+        'type_user',
         'email',
         'password',
         'active'
